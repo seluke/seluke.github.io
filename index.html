@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Hello, Luke!</title>
+        <script>
+            /* Branch SDK init */
+            (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode autoAppIndex banner closeBanner closeJourney creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode trackCommerceEvent logEvent disableTracking".split(" "), 0);
+            var options = {make_new_link: false}
+            branch.init("key_live_kaPan3cEzaLRusmR5Gkz3lbjCEnxcYPt", options, function(err, data) {
+                console.log(err, data);
+            });
+
+            /* additional data for Journey */
+            var linkData = {
+                data: {
+                    "custom_bool": true,
+                    "custom_int": Date.now(),
+                    "custom_string": "bestplayer",
+                }
+            };
+            /* set Journey Data */
+            branch.setBranchViewData(linkData);
+            // close
+            branch.closeJourney(function(err, data) { 
+  console.log(err, data); 
+});
+            // reopen
+            branch.track("pageview");
+        </script>
+    </head>
+    <body>
+        <h3>Journey Issue Test</h3>
+        <ul>
+            <li>Reporter: Luke An</li>
+            <li>Email: lan@branch.io</li>
+        </ul>
+    </body>
+</html>
