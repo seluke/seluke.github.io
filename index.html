@@ -4,36 +4,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Hello, Luke!</title>
-	<script>
-    // load Branch
-    (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode autoAppIndex banner closeBanner closeJourney creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode trackCommerceEvent logEvent disableTracking".split(" "), 0);
-    // init Branch
-    branch.init('key_live_kaPan3cEzaLRusmR5Gkz3lbjCEnxcYPt');
-		function sendPurchase() {
-			var event_and_custom_data = {
-          "session_time": "진입까지 걸리는 시간"
-        };
-
-        var content_items = [
-          {
-            "$sku": "방송번호",
-            "$product_name": "방송명",
-            "content_type": "방송형태 구분",
-            "content_category": "콘텐츠 카테고리",
-            "date_type:": "요일 구분",
-            "time_type": "시간 구분"
-          }
-        ];
-        
-        branch.logEvent(
-          "VIEW_AD",
-          event_and_custom_data,
-          content_items,
-          "",
-          function(err) { console.log(err); }
-        );
-		}
-  </script>
     </head>
     <body>
         <h3>AppTest</h3>
@@ -42,19 +12,8 @@
             <li>Email: lan@branch.io</li>
         </ul>
         <h3>DeepLinkTest</h3>
-	<input type="button" value="Event" onclick="sendEvent()">
         <ul>
-            <li><a href="https://app.luke-an.com/GMqM26ikNV">SELUKE</a></li>
-		<li><a href="https://wemakeprice.app.link?%243p=a_custom_187401&~customer_campaign=N1001&~customer_ad_set_name=2003_N&~customer_ad_name=N2&~customer_placement=751746666&%24android_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.wemakeprice&%24deeplink_path=doBranch%3Fwemakeprice_json_action%3D%257B%2522type%2522%253A5%252C%2522value%2522%253A751746666%252C%2522depth%2522%253A1%252C%2522mode%2522%253A4%257D&%24uri_redirect_mode=1">Wemakeprice Deferred Deep Link Test</a></li>
-		<li><a href="https://wemakeprice.app.link/oHv6ViWiw4?%243p=a_custom_187401&%24uri_redirect_mode=1&%24fallback_url=https%3A%2F%2Fbranch.io">Wemakeprice Cauly Test</a></li>
-		<li><a href="https://wemakeprice.app.link/MOirT0qba7?%243p=a_advantage&~ad_set_id=ad_set_id&~click_id=click_id&&~secondary_publisher=secondary_publisher&$uri_redirect_mode=1">Wemakeprice Advantage Test</a></li>
-		<li><a href="https://app.luke-an.com/yeNDGWqdB4?$uri_redirect_mode=1">Branch TEST</a></li>
-		<li><a href="https://seluke.app.link/SRK1NuMpw4?%243p=a_actionpay&apoffer=seluketest&source_id=seluketest&~click_id=seluketest&%24match_duration=60&$uri_redirect_mode=1">Match Duration Test</a></li>
-		<Li><a href="https://branchster.app.link/00BM3bXOm7?$uri_redirect_mode=1">Branch Monster Link</a></li>
-		<li><a href="https://wemakeprice.app.link?%243p=a_naver&~click_id={trkcvs}&~customer_campaign=P1023&~customer_ad_set_name=2006_DZ&~customer_ad_name=S1&~customer_placement=5000287&%24deeplink_path=doBranch%3Fwemakeprice_json_action%3D%257B%2522type%2522%253A17%252C%2522value%2522%253A%2522https%253A%252F%252Fmw.wemakeprice.com%252Fspecial%252Fcategory%252F5000287%2522%252C%2522mode%2522%253A4%257D">Wemakeprice Deferred Deep Link</a></li>
-		<li><a href="https://wemakeprice.app.link?%243p=a_naver&~click_id={trkcvs}&~customer_campaign=P1023&~customer_ad_set_name=2006_DZ&~customer_ad_name=S1&~customer_placement=5000287&%24deeplink_path=doBranch%3Fwemakeprice_json_action%3D%257B%2522type%2522%253A17%252C%2522value%2522%253A%2522https%253A%252F%252Fmw.wemakeprice.com%252Fspecial%252Fcategory%252F5000287%2522%252C%2522mode%2522%253A4%257D">Wemakeprice Deferred Deep Link Test June</a></li>
-		<li><input type="button" id="btn_purchase" onclick="sendPurchase()" value="PURCHASE"/></li>
-		<li><a href="https://vogoplay.app.link/1Pdqi82ZR9">VOGO</a></li>
+	    <li><a href="https://h8496.test-app.link/htFBq8jfBab">호갱노노 Branch Link</a></li>
 	</ul>
     </body>
 </html>
