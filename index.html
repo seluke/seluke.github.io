@@ -4,6 +4,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Hello, Luke!</title>
+	<script>
+		function reqListener () {
+  console.log(this.responseText);
+}
+		var oReq = new XMLHttpRequest();
+oReq.addEventListener("load", reqListener);
+oReq.open("GET", "https://impression.link/impression?branch_key=key_live_kaPan3cEzaLRusmR5Gkz3lbjCEnxcYPt&%243p=a_actionpay&android_tracker_id=abc&apoffer={apoffer}&ios_tracker_id=abc&source_id={source_id}&~branch_ad_format=App%20Only&~click_id={click_id}&~feature=paid%20advertising");
+oReq.send();
+	    </script>
     </head>
     <body>
         <h3>AppTest</h3>
