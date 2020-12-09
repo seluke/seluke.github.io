@@ -6,8 +6,10 @@
         <title>Hello, Luke!</title>
 	<script>
     window.onload = function() {
+      alert("open branchster App");
       window.top.location = "branchsters://";
       setTimeout(function timeout() {
+	alert("timeout end");
         window.top.location="https://branch.io";
       },250);
     };
